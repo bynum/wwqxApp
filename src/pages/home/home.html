@@ -5,13 +5,13 @@
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+  <button ion-button (click)="getData(2,'DP01_N0001')">获取气象要素</button>
+  <button ion-button (click)="getData(3,'DP01_N0001')">拍照</button>
+  <button ion-button (click)="getData(4,'DP01_N0001')">揭开草帘</button>
+  <button ion-button (click)="getData(5,'DP01_N0001')">放下草帘</button>
+  <button ion-button (click)="getData(6,'DP01_N0001')">打开通风口</button>
+  <button ion-button (click)="getData(7,'DP01_N0001')">关闭通风口</button>
+  <button ion-button (click)="getData(8,'DP01_N0001')">全部动作停止</button>
+  <ion-input [(ngModel)]='commandResult' type="text" value="1212"></ion-input>
+  <img src="http://61.178.185.170:10030/pic/DP01_N0001_20161120213344.jpg">
 </ion-content>
